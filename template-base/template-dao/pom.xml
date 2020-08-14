@@ -13,6 +13,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>com.demofactory.template</groupId>
             <artifactId>template-domain</artifactId>
         </dependency>

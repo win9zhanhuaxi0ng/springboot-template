@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 /**
  * @author wy
  */
@@ -23,8 +25,22 @@ public class DemoController {
     @GetMapping("test")
     public String test() {
         Demo demo = new Demo();
-        int result = demoService.insert(demo);
+        int result = demoService.testInsert(demo);
         System.out.println("result" + result);
         return "result：------------" + result;
+    }
+
+    @GetMapping("test1")
+    public String test1() {
+        List<Demo> demoList = demoService.testConditionalQuery();
+        System.out.println(demoList.size());
+        return "result：------------" + demoList.size();
+    }
+
+    @GetMapping("test2")
+    public String test2() {
+        List<Demo> demoList = demoService.testSQL();
+        System.out.println(demoList.size());
+        return "result：------------" + demoList.size();
     }
 }

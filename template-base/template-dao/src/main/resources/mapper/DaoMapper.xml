@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.demofactory.template.dao.DemoDao">
-    <insert id="insert" parameterType="demo">
-        insert into sys_domain(id, create_time, modify_time, name, url, remark, status)
-        values (1, null, null, null, null, null, null)
-    </insert>
+<mapper namespace="com.demofactory.template.dao.demo.DemoDao">
+
+    <select id="test2" resultType="com.demofactory.template.domain.demo.Demo">
+        select *
+        from demo
+    </select>
 </mapper>

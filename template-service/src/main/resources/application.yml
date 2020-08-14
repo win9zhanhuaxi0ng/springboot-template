@@ -42,3 +42,7 @@ dubbo:
   scan:
     # 接口实现者（服务实现）包
     base-packages: com.demofactory.template.service
+
+mybatis-plus:
+  # 支持统配符 * 或者 ; 分割
+  typeEnumsPackage: com.demofactory.template.domain.enums
