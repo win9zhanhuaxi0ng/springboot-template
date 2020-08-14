@@ -1,0 +1,7 @@
+.idea
+/template-base/template-base.iml
+/template-admin/template-admin.iml
+/template-service/template-service.iml
+/template-base/template-api/template-api.iml
+/template-base/template-dao/template-dao.iml
+/template-base/template-domain/template-domain.iml
