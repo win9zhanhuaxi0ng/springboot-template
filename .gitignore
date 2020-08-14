@@ -5,3 +5,8 @@
 /template-base/template-api/template-api.iml
 /template-base/template-dao/template-dao.iml
 /template-base/template-domain/template-domain.iml
+/template-service/target/
+/template-base/template-domain/target/
+/template-base/template-dao/target/
+/template-base/template-api/target/
+/template-admin/target/
