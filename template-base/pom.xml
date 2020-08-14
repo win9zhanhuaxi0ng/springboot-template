@@ -60,7 +60,7 @@
                 <version>${lombok.version}</version>
             </dependency>
 
-            <!-- mybatis-plus -->
+            <!-- mybatis-plus为简化开发而生 https://baomidou.com/ -->
             <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
