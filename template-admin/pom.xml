@@ -87,16 +87,11 @@
         <!--        </dependency>-->
 
         <!-- 本项目-->
+        <!-- api里面集成了 mybatis-plus-->
         <dependency>
             <groupId>com.demofactory.template</groupId>
             <artifactId>template-api</artifactId>
             <version>${template.version}</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>mybatis-plus-boot-starter</artifactId>
-                    <groupId>com.baomidou</groupId>
-                </exclusion>
-            </exclusions>
         </dependency>
 
     </dependencies>

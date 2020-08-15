@@ -2,6 +2,7 @@ package com.demofactory.template.service.demo;
 
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.demofactory.template.api.DemoService;
 import com.demofactory.template.dao.demo.DemoDao;
 
@@ -17,7 +18,7 @@ import java.util.List;
  * @author wy
  */
 @DubboService
-public class DemoServiceImpl implements DemoService {
+public class DemoServiceImpl extends ServiceImpl<DemoDao, Demo> implements DemoService {
 
     @Resource
     private DemoDao demoDao;
