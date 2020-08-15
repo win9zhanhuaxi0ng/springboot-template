@@ -93,6 +93,12 @@
             <groupId>com.demofactory.template</groupId>
             <artifactId>template-dao</artifactId>
             <version>${template.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>template-domain</artifactId>
+                    <groupId>com.demofactory.template</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
     <build>
