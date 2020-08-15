@@ -18,8 +18,8 @@ dubbo:
   protocol:
     # 协议端口
     port: 20880
-    # 协议名称
-    name: ${spring.application.name}
+    # 协议名称 默认使用协议为dubbo协议
+    name: dubbo
   # 注册中心信息
   registry:
     address: zookeeper://127.0.0.1:2181
@@ -31,7 +31,9 @@ dubbo:
   provider:
     protocol: dubbo
     version: 1.0.0
-    timeout: 30000
+    # 服务请求可以在指定时间内完成，指定时间内未完成立即失败
+    # 10秒
+    timeout: 10000
   scan:
     # 接口实现者（服务实现）包
     base-packages: com.demofactory.template.service

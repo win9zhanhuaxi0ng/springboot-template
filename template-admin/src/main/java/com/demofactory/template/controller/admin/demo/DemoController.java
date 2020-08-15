@@ -20,8 +20,8 @@ import java.util.List;
 @RequestMapping("demo")
 public class DemoController {
 
-    // check = false 不检查服务到底有没有，没有不报错
-    @DubboReference(check = true)
+    // 优先级高于配置文件中的 dubbo.consumer.check
+    @DubboReference(check = false)
     private DemoService demoService;
 
     @GetMapping("test")
