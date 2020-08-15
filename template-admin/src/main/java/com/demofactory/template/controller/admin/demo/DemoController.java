@@ -1,9 +1,11 @@
 package com.demofactory.template.controller.admin.demo;
 
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.demofactory.template.api.DemoService;
 import com.demofactory.template.domain.demo.Demo;
 
+import com.demofactory.template.domain.enums.ValidEnum;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -43,4 +45,17 @@ public class DemoController {
         System.out.println(demoList.size());
         return "result：------------" + demoList.size();
     }
+
+    /**
+     * 测试RPC调用（失败，mybatis-plus不支持而且不建议rpc调用传QueryWrapper）
+     * @return
+     */
+    @GetMapping("test3")
+    public String test3() {
+        QueryWrapper<Demo> q = new QueryWrapper<>();
+        q.eq("status", ValidEnum.DELETED.getCode());
+        List<Demo> list = demoService.list(q);
+        return "result：------------" + list.size();
+    }
+
 }

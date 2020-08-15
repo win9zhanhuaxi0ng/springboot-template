@@ -92,6 +92,13 @@
             <groupId>com.demofactory.template</groupId>
             <artifactId>template-api</artifactId>
             <version>${template.version}</version>
+            <!-- mybatis-plus 里面有jdbc链接，如果不排除，则在admin服务调用层必须给出数据库连接url -->
+            <exclusions>
+                <exclusion>
+                    <artifactId>spring-boot-starter-jdbc</artifactId>
+                    <groupId>org.springframework.boot</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
     </dependencies>
