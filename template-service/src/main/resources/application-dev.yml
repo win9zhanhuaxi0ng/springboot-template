@@ -51,5 +51,5 @@ mybatis-plus:
     cache-enabled: true
     # sql打印
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-  # 支持统配符 * 或者 ; 分割
+  # 支持统配符 * 或者 ; 分割 把数据库里tinyint字段映射为实体类中Enum类型
   typeEnumsPackage: com.demofactory.template.domain.enums

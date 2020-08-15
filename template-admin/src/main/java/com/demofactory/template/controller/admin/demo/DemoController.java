@@ -21,7 +21,7 @@ import java.util.List;
 public class DemoController {
 
     // check = false 不检查服务到底有没有，没有不报错
-    @DubboReference(check = false)
+    @DubboReference(check = true)
     private DemoService demoService;
 
     @GetMapping("test")
