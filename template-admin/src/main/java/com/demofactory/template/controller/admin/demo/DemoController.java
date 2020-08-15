@@ -20,8 +20,9 @@ import java.util.List;
 @RequestMapping("demo")
 public class DemoController {
 
-    // 优先级高于配置文件中的 dubbo.consumer.check
-    @DubboReference(check = false)
+    // 优先级高于配置文件中的 dubbo.consumer
+    // 如果采用url直连提供者的方式，必须设定version
+    @DubboReference(check = false, version = "1.0.0" , url = "dubbo://127.0.0.1:20880")
     private DemoService demoService;
 
     @GetMapping("test")
