@@ -28,6 +28,3 @@ dubbo:
     # 作为消费启动时候发现没有服务提供者的时候报错
     check: true
     retries: 3
-  scan:
-    # 接口实现者（服务实现）包
-    base-packages: com.demofactory.template.service
