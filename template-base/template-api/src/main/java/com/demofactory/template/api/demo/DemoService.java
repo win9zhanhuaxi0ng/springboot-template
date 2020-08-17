@@ -1,4 +1,4 @@
-package com.demofactory.template.api;
+package com.demofactory.template.api.demo;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.demofactory.template.domain.demo.Demo;

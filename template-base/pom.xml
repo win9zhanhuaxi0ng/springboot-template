@@ -27,6 +27,7 @@
         <lombok.version>1.18.12</lombok.version>
         <mybatis-plus.version>3.3.2</mybatis-plus.version>
         <hutool.version>5.3.10</hutool.version>
+        <fastjson.version>1.2.73</fastjson.version>
         <!--        <spring.version>3.2.14.RELEASE</spring.version>-->
         <!--        <junit.version>4.10</junit.version>-->
         <!--        <servlet.api.version>2.4</servlet.api.version>-->
@@ -60,6 +61,13 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
+            </dependency>
+
+            <!-- fastjson -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
             </dependency>
 
             <!-- mybatis-plus为简化开发而生 https://baomidou.com/ -->

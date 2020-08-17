@@ -2,11 +2,11 @@ package com.demofactory.template.controller.admin.demo;
 
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.demofactory.template.api.DemoService;
+import com.demofactory.template.api.demo.DemoService;
 import com.demofactory.template.domain.demo.Demo;
 
 import com.demofactory.template.domain.enums.ValidEnum;
-import org.apache.dubbo.config.annotation.DubboReference;
+import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,7 +22,7 @@ public class DemoController {
 
     // 优先级高于配置文件中的 dubbo.consumer
     // 如果采用url直连提供者的方式，必须设定version
-    @DubboReference(check = false, version = "1.0.0" , url = "dubbo://127.0.0.1:20880")
+    @Reference(check = false)
     private DemoService demoService;
 
     @GetMapping("test")
