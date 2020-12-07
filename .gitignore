@@ -20,3 +20,5 @@
 /service-ribbon/service-ribbon.iml
 /service-feign/service-feign.iml
 /service-feign/target/
+/service-zuul/service-zuul.iml
+/service-zuul/target/
