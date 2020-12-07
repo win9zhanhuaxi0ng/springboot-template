@@ -18,3 +18,5 @@
 /eureka-server/target/
 /service-ribbon/target/
 /service-ribbon/service-ribbon.iml
+/service-feign/service-feign.iml
+/service-feign/target/
