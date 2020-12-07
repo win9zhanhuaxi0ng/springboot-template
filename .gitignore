@@ -16,3 +16,5 @@
 /service-hi/target/
 /service-hi/service-hi.iml
 /eureka-server/target/
+/service-ribbon/target/
+/service-ribbon/service-ribbon.iml
