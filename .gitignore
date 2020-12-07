@@ -12,3 +12,7 @@
 /template-admin/target/
 /template-base/template-common/template-common.iml
 .DS_Store
+/eureka-server/eureka-server.iml
+/service-hi/target/
+/service-hi/service-hi.iml
+/eureka-server/target/
