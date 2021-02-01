@@ -1,5 +1,0 @@
-spring:
-  application:
-    name: 'template-admin'
-  profiles:
-    active: ${spring.profiles.active}

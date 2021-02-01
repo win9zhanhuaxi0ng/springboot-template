@@ -1,6 +1,0 @@
-spring:
-  application:
-    # 应用名称
-    name: 'template-service'
-  profiles:
-    active: ${spring.profiles.active}
